@@ -33,7 +33,7 @@ namespace HowManyOfThisType
 
             Console.WriteLine("“Obrigado por ter usado este programa!");
 
-            Console.WriteLine("Merci d’utiliser ce programme!");
+            
 
             // Expected output
             // int   : 2
