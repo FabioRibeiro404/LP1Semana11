@@ -8,7 +8,6 @@ namespace MyGenericClass
         private T item2;
         private T item3;
 
-        // Construtor vazio que inicializa as variáveis com valores por omissão
         public Guarda3()
         {
             item1 = default(T);
@@ -16,7 +15,6 @@ namespace MyGenericClass
             item3 = default(T);
         }
 
-        // Método para obter um item por índice
         public T GetItem(int i)
         {
             switch (i)
@@ -31,8 +29,6 @@ namespace MyGenericClass
                     throw new IndexOutOfRangeException();
             }
         }
-
-        // Método para definir um item por índice
         public void SetItem(int i, T item)
         {
             switch (i)
