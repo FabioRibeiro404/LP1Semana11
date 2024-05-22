@@ -10,7 +10,6 @@ namespace JustLikeACollection
         private T item2;
         private T item3;
 
-        // Construtor vazio que inicializa as variáveis com valores por omissão
         public Guarda3()
         {
             item1 = default(T);
@@ -18,7 +17,6 @@ namespace JustLikeACollection
             item3 = default(T);
         }
 
-        // Método para obter um item por índice
         public T GetItem(int i)
         {
             switch (i)
@@ -34,7 +32,6 @@ namespace JustLikeACollection
             }
         }
 
-        // Método para definir um item por índice
         public void SetItem(int i, T item)
         {
             switch (i)
@@ -53,7 +50,6 @@ namespace JustLikeACollection
             }
         }
 
-        // Novo método Add
         public void Add(T item)
         {
             if (EqualityComparer<T>.Default.Equals(item1, default(T)))
@@ -74,7 +70,6 @@ namespace JustLikeACollection
             }
         }
 
-        // Implementação de IEnumerable<T>
         public IEnumerator<T> GetEnumerator()
         {
             yield return item1;
@@ -82,7 +77,6 @@ namespace JustLikeACollection
             yield return item3;
         }
 
-        // Implementação explícita de IEnumerable
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
