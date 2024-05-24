@@ -41,7 +41,10 @@ namespace FilaLimitada
             return _items.Contains(item);
         }
 
-
+        public void CopyTo(T[] array, int arrayIndex)
+        {
+            _items.CopyTo(array, arrayIndex);
+        }
 
         public IEnumerator<T> GetEnumerator()
         {
