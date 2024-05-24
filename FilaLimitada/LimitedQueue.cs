@@ -56,5 +56,9 @@ namespace FilaLimitada
             return _items.GetEnumerator();
         }
 
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return _items.GetEnumerator();
+        }
     }
 }
