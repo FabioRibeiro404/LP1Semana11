@@ -46,6 +46,11 @@ namespace FilaLimitada
             _items.CopyTo(array, arrayIndex);
         }
 
+        public bool Remove(T item)
+        {
+            return _items.Remove(item);
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
             return _items.GetEnumerator();
