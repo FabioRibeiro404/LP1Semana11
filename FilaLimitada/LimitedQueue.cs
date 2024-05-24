@@ -42,6 +42,7 @@ namespace FilaLimitada
         }
 
 
+
         public IEnumerator<T> GetEnumerator()
         {
             return _items.GetEnumerator();
